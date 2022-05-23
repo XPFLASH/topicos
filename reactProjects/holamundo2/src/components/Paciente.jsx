@@ -23,7 +23,7 @@ export const Paciente = ({ paciente, setPaciente, eliminarPaciente }) => {
       <div className="flex justify-evenly gap-4 mt-4">
         <input type="button" value="Editar" className=' bg-blue-500  font-bold  p-2 text-white w-full rounded-md hover:bg-black hover:cursor-pointer' onClick={() => setPaciente(paciente)} />
 
-        <input type="button" value="Eliminar" className='bg-[#B8B9BB] font-bold  p-2 text-white w-full rounded-md hover:bg-black hover:cursor-pointer' onClick={handleEliminar} />
+        <input type="button" value="Eliminar" className='bg-green-400 font-bold  p-2 text-white w-full rounded-md hover:bg-black hover:cursor-pointer' onClick={handleEliminar} />
       </div>
 
     </div>
