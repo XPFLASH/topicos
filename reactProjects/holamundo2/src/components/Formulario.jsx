@@ -93,11 +93,11 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="email" className='text-lg font-semibold'>Correo: </label>
-                        <input type="email" id='email' placeholder='Escribe tu correo' className='w-full rounded-md p-1 mb-[5px]' value={correo} onChange={(e) => setCorreo(e.target.value)} />
+                        <input type="email" id='email' placeholder='Escribe tu correo...' className='w-full rounded-md p-1 mb-[5px]' value={correo} onChange={(e) => setCorreo(e.target.value)} />
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="sim" className='text-lg font-semibold'>Síntomas: </label>
-                        <textarea name="rext" id="sim" cols="30" rows="5" placeholder='Escribe tus sintomas' className='w-full rounded-md p-1 mb-[5px] ' value={sintomas} onChange={(e) => setSintomas(e.target.value)} ></textarea>
+                        <textarea name="rext" id="sim" cols="30" rows="5" placeholder='Escribe tus sintomas...' className='w-full rounded-md p-1 mb-[5px] ' value={sintomas} onChange={(e) => setSintomas(e.target.value)} ></textarea>
                     </div>
                     <label htmlFor="fecha" className='text-lg font-semibold'>Fecha Cita: </label>
                     <input type="date" id='fecha' placeholder='Selecciona la fecha...' className='w-full p-1 rounded-md mb-[5px]' value={fecha} onChange={(e) => setFecha(e.target.value)} />
