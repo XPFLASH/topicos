@@ -80,7 +80,7 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
 
     return (
         <div className='md:w-1/2 lg:w-2/5'>
-            <form className="bg-[#B6BDDE] p-10 m-10 border-4 border-solid border-black  rounded-md" onSubmit={validarFormulario}>
+            <form className="bg-[#B6BDDE] p-8 m-8 border-4 border-solid border-black  rounded-md" onSubmit={validarFormulario}>
 
                 {error && <p className="font-bold text-center uppercase mb-2 p-1 bg-[#626FC0] rounded-xl w-full">* Debes llenar todos los campos</p>}
 
