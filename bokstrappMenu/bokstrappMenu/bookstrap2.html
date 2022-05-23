@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/15db405171.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/bokstrappMenu/bokstrappMenu/img/keyboard-solid.svg" type="svg/icon">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
+    
+    <title>Formulario</title>
+    
+</head>
+<body>
+
+   <center><img src="/bokstrappMenu/bokstrappMenu/img/coverssf2.png" width="550px" height="400px" alt=""></center> 
+  <form class="formulario">
+    <div class="container">
+      <h1>Formulario para formar parte del FlashServer (Crew SSF2)</h1>
+
+      <br>
+
+      <h3>Información Personal</h3>
+
+      <div class="row g-3">
+        <div class="col-4">
+          <label for="name" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="name01" placeholder="Pon tu(s) nombre(s)...">
+        </div>
+
+        <div class="col-4">
+          <label for="last" class="form-label">Apellido Paterno:</label>
+          <input type="text" class="form-control" id="last02" placeholder="Pon tu apellido paterno...">
+        </div>
+
+        <div class="col-4">
+          <label for="lastm" class="form-label">Apellido Materno:</label>
+          <input type="text" class="form-control" id="last02" placeholder="Pon tu apellido materno...">
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row g-3">
+        <div class="col-4">
+          <label for="email" class="form-label">Correo Electronico:</label>
+          <input type="email" class="form-control" id="email03" placeholder="nombre@ejemplo.com">
+        </div>
+
+        <div class="col-4">
+          <label for="city" class="form-label">Ciudad:</label>
+          <input type="text" class="form-control" id="city04" placeholder="Coloca la ciudad en donde vives...">
+        </div>
+
+        <div class="col-4">
+          <label for="city" class="form-label">Estado:</label>
+          <input class="form-control" list="estados" id="datalist01" placeholder="Selecciona el estado...">
+          <datalist id="estados">
+            <option value="Aguascaliente">
+            <option value="Baja California">
+            <option value="Baja California Sur">
+            <option value="Campeche">
+            <option value="Ciudad de Mexico">
+            <option value="Chiapas">
+            <option value="Chiapas">
+            <option value="Chihuahua">
+            <option value="Coahuila">
+            <option value="Colima">
+            <option value="Durango">
+            <option value="Estado de México">
+            <option value="Guanajuato">
+            <option value=" Guerrero">
+            <option value="Hidalgo">
+            <option value="Jalisco">
+            <option value="Michoacán">
+            <option value="Morelos">
+            <option value="Nayarit">
+            <option value="Nuevo León">
+            <option value="Oaxaca">
+            <option value="Puebla">
+            <option value="Querétaro">
+            <option value="Quintana Roo">
+            <option value="San Luis Potosí">
+            <option value="Sinaloa">
+            <option value="Sonora">
+            <option value="Tabasco">
+            <option value="Tamaulipas">
+            <option value="Tlaxcala">
+            <option value="Veracruz">
+            <option value="Yucatán">
+            <option value="Zacatecas">
+            <option value="Extranjero">
+            
+          </datalist>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row g-3">
+        <div class="col-3">
+          <label for="phone" class="form-label">Numero de telefono:</label>
+          <input type="text" class="form-control" id="phone05" placeholder="Coloca tu numero de telefono...">
+        </div>
+
+        <div class="col-auto">
+          <label for="zip" class="form-label">Codigo Postal:</label>
+          <input type="text" class="form-control" id="zip06" placeholder="Coloca tu codigo postal...">
+        </div>
+      </div>
+
+      <br>
+
+      <h3>Datos sobre el jugador</h3>
+
+      <div class="row g-3">
+        <div class="col-auto">
+          <label for="tag" class="form-label">Tag:</label>
+          <input type="text" class="form-control" id="tag07" placeholder="Pon tu tag (apodo)...">
+        </div>
+
+        <div class="col-auto">
+          <label for="character" class="form-label">Main:</label>
+          <select class="form-select" id="character">
+            <option selected disabled value="">Escoje...</option>
+            <option>Mario</option>
+            <option>Sonic</option>
+            <option>Crash</option>
+            <option>Rayman</option>
+            <option>DK</option>
+          </select>
+        </div>
+
+      
+      </div>
+
+      <br>
+
+      <div class="col-auto">
+        <label for="ping" class="form-label">Mande una captura del ping de tu internet</label>
+        <input type="file" class="form-control" aria-label="file example" required>
+
+
+        
+      </div>
+
+      <br>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="check08" required>
+          <label class="aceptarRegla" for="check08">He leido las reglas y acepto los terminos</label>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row g-3">
+        <div class="col-auto">
+          <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+        </div>
+
+        <div class="col-auto">
+          <button class="btn btn-secondary" type="submit">Cancelar</button>
+        </div>
+    </div>
+
+    </div>
+  </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

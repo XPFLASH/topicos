@@ -1,0 +1,24 @@
+{
+    "empleados": [
+        {
+            "id": 1,
+            "nombre": "Ricardo Escobar",
+            "puesto": "Estudiantes"
+        },
+        {
+            "id": 2,
+            "nombre": "Juan Perez",
+            "puesto": "Estudiantes-R"
+        },
+        {
+            "id": 3,
+            "nombre": "Checo Perez",
+            "puesto": "Piloto"
+        },
+        {
+            "id": 4,
+            "nombre": "Martin Tirado",
+            "puesto": "Desarrollo Academico"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+.ingrediente{
+    color: red;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.mole, .tacos{
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    margin: 0px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.mole h2{
+    color: #CF9EAC;
+}
+
+.tacos h2{
+    color: #887177;
+}
+
+.estrellas{
+    color: yellow;
+}

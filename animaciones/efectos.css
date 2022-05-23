@@ -1,0 +1,96 @@
+/* div:hover{
+    background-color: blueviolet;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+} */
+
+/* h1:hover{
+    background-color: orangered;
+} */
+/* button:hover{
+    color: blue;
+} */
+
+/*Crear un boton con la psedo-clase active:*/
+
+/* input:focus{
+    background-color: red;
+} */
+
+/* button:focus{
+    background-color: blue;
+    border-radius: 10px;
+} 
+focus > active
+*/
+
+/* button:focus{
+    
+    background-color:blue;
+}
+button:active{
+    
+    background-color: red;
+}
+
+p:active,h1:active{
+    background-color: aqua;
+} */
+
+/* #id1:focus{
+    background-color: purple;
+}
+
+#id2:hover{
+    background-color: green;
+}
+
+#id3:active{
+    background-color:orangered
+} */
+
+/*aplica a la clase .btn lo siguiente
+    1. Que no tenga outline
+    2. Que no tenga borde
+    3. Cuando el mouse este encima del boton, se ponga la manita
+*/
+
+/* body{
+    background-color: #fcd04b;
+    font-family: BhuTuka Expanded One;
+    color: white;
+    text-align: center;
+    font-weight: 300px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    letter-spacing: 2px;
+    background-color: #fcad26;
+    text-transform: uppercase;
+    padding: 25px 80px 25px 80px;
+    margin:0px auto;
+    font-size: 16px;
+    font-weight: 300px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 6px 0px #efa424   
+}
+
+.btn:hover{
+    box-shadow: 4px 0px #efa424;
+    top: 2px;
+
+}
+
+.btn:active{
+    box-shadow: none #efa424;
+    top: 6px;
+} */

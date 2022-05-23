@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/formularioIcono.jpg" type="image/jpg">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <style>
+        h1{
+            background-color: beige;
+        }
+        ::placeholder{
+            color: orangered;
+        }
+        h3{
+            font-family: cursive;
+        }
+        input[type="submit"]{
+            background-color: orange;
+            color: white;
+            
+        }
+    </style>
+    <center><img src="images/formula.png" alt="Imagen de Formulario"></center>
+    <div>
+        <h1>FORMULARIO PRINCIPAL</h1>
+        <h3>Busqueda en Google</h3>
+        <form action="https://www.google.com/search" method="get">
+            <!--For se asocia con el atributo main-->
+            <label for="q">¿Cual es tu nombre?</label>
+            <input type="text" name="q" placeholder="busqueda" autocomplete="off"><br>
+            <input type="submit">
+            </form>
+
+
+            <h3>Busqueda en reddit</h3>
+            <form action="https://www.reddit.com/search/" method="get">
+                <!--For se asocia con el atributo main-->
+                <label for="q">¿Cual es tu nombre?</label>
+                <input type="text" autocomplete="off" name="q" placeholder="busqueda"><br>
+                <input type="submit">
+                </form>
+
+                <h3>Formulario Personal</h3>
+                <form>
+                    <fieldset>
+                        <legend>Informacion Personal</legend>
+                        <label for="username">¿Como te llamas?</label>
+                        <input type="text" name="username"><br><br>
+
+                        <label for="age">¿Que edad tienes?</label>
+                        <input type="text" name="age"><br><br>
+
+                        <label for="color">¿Cual es tu color favorito?</label>
+                        <input type="radio" name="color" value="rojo">Rojo
+                        <input type="radio" name="color" value="azul">Azul
+                        <input type="radio" name="color" value="verde">Verde
+                        <input type="radio" name="color" value="amarillo">Amarillo
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Informacion Escolar</legend>
+                        <label for="school">¿Como se llama tu escuela?</label>
+                        <input type="text" name="school"><br><br>
+
+                        <label for="grade">¿Que estudias?</label>
+                        <input type="text" name="grade"><br><br>
+
+                        <label for="materia">¿Cual es tu materia?</label>
+                        <input type="checkbox" name="materia" >espanol
+                        <input type="checkbox" name="materia" >Matematicas
+                        <input type="checkbox" name="materia" >Geografia
+                        <input type="checkbox" name="materia" >Historia
+                </fieldset>
+                </form>
+            <!--
+
+            <label for="password">¿Cual es tu contraseña?</label>
+            <input type="password" name="password" required>-->
+
+            <!-- Asociamos un label a un textArea
+            <label for="comentarios">Deja tus comentarios</label>
+            <textArea name="comentarios" cols="60" rows="4" value></textArea>-->
+            
+        <!--Con a creo los hipervinculos-->
+        <a href="registro.html">Ir a Registro</a>
+
+
+    </div>
+
+</body>
+</html>
