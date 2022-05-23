@@ -18,7 +18,7 @@ export const Paciente = ({ paciente, setPaciente, eliminarPaciente }) => {
 
       <p>Fecha: <span className='font-normal normal-case'>{paciente.fecha}</span></p>
 
-      <p>Sintomas: <span className='font-normal normal-case'>{paciente.sintomas}</span></p>
+      <p>Síntomas: <span className='font-normal normal-case'>{paciente.sintomas}</span></p>
 
       <div className="flex justify-evenly gap-4 mt-4">
         <input type="button" value="Editar" className=' bg-blue-500  font-bold  p-2 text-white w-full rounded-md hover:bg-black hover:cursor-pointer' onClick={() => setPaciente(paciente)} />
