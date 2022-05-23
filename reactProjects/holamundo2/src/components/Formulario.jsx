@@ -96,7 +96,7 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
                         <input type="email" id='email' placeholder='Escribe tu correo' className='w-full rounded-md p-1 mb-[5px]' value={correo} onChange={(e) => setCorreo(e.target.value)} />
                     </div>
                     <div className='mb-3'>
-                        <label htmlFor="sim" className='text-lg font-semibold'>Sintomas: </label>
+                        <label htmlFor="sim" className='text-lg font-semibold'>Síntomas: </label>
                         <textarea name="rext" id="sim" cols="30" rows="5" placeholder='Escribe tus sintomas' className='w-full rounded-md p-1 mb-[5px] ' value={sintomas} onChange={(e) => setSintomas(e.target.value)} ></textarea>
                     </div>
                     <label htmlFor="fecha" className='text-lg font-semibold'>Fecha Cita: </label>
