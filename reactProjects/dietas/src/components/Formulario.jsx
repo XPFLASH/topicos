@@ -85,7 +85,7 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
 
                 {error && <p className="font-bold text-center uppercase mb-2 p-1 bg-[#626FC0] rounded-xl w-full">* Debes llenar todos los campos</p>}
 
-                <h1 className='text-center font-bold text-2xl  mb-3 '>Formulario</h1>
+                <h1 className='text-center font-bold text-2xl  mb-3 '>Datos del Paciente</h1>
                 <p className='mt-5 text-xl'><span className='font-bold'>Ingresa</span> la información correspondiente</p>
 
                 <div className='mb-3'>
@@ -94,15 +94,22 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
                         <input type="text" id='name' placeholder='Escribe tu nombre...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
                     </div>
                     <div className='mb-3'>
-                        <label htmlFor="email" className='text-lg font-semibold'>Correo: </label>
-                        <input type="email" id='email' placeholder='Escribe tu correo...' className='w-full rounded-md p-1 mb-[5px]' value={correo} onChange={(e) => setCorreo(e.target.value)} />
+                        <label htmlFor="genero" className='text-lg font-semibold'>Genero: </label>
+                        <input type="radio" name="Masculino" id="h" />Masculino
+                        <input type="radio" name="Femenino" id="h" />Femenino
                     </div>
                     <div className='mb-3'>
-                        <label htmlFor="sim" className='text-lg font-semibold'>Síntomas: </label>
-                        <textarea name="rext" id="sim" cols="30" rows="5" placeholder='Escribe tus sintomas...' className='w-full rounded-md p-1 mb-[5px] ' value={sintomas} onChange={(e) => setSintomas(e.target.value)} ></textarea>
+                        <label htmlFor="peso" className='text-lg font-semibold'>Peso: </label>
+                        <input type="text" id='pes' placeholder='Escribe tu peso...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
                     </div>
-                    <label htmlFor="fecha" className='text-lg font-semibold'>Fecha Cita: </label>
-                    <input type="date" id='fecha' placeholder='Selecciona la fecha...' className='w-full p-1 rounded-md mb-[5px]' value={fecha} onChange={(e) => setFecha(e.target.value)} />
+                    <div>
+                        <label htmlFor="estatura" className='text-lg font-semibold'>Estarura: </label>
+                        <input type="text" id='estatur' placeholder='Escribe tu estatura...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="age" className='text-lg font-semibold'>Edad: </label>
+                        <input type="text" id='eda' placeholder='Escribe tu edad...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                    </div>
                 </div>
 
                 <input type="submit" id='boton' value={paciente.id ? 'Editar Paciente' : 'Agregar Paciente'} className='bg-[#FFFFFF] text-lg font-medium mt-[5px] hover:bg-[#000000] hover:cursor-pointer w-full hover:text-white rounded-md' />
