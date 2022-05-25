@@ -98,25 +98,41 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
                         <div className='flex justify-center'>
                             <div className='form-check form-check-inline'>
                                 <input type="radio" name="genero" id="h" value={1} />
-                                <label className="inline-block text-black ml-2 mr-2 text-xl" for="h"> Masculino</label>
+                                <label className="inline-block text-black ml-2 mr-2 text-lg font-semibold" for="h"> Masculino</label>
                             </div>
                             <div className='form-check form-check-inline'>
                                 <input type="radio" name="genero" id="m" value={2} />
-                                <label className="inline-block text-black ml-2 text-xl" for="h"> Femenino</label>
+                                <label className="inline-block text-black ml-2 text-lg font-semibold" for="h"> Femenino</label>
                             </div>
                         </div>
                     </div>
                     <div className='mb-3'>
-                        <label htmlFor="peso" className='text-lg font-semibold'>Peso: </label>
-                        <input type="text" id='pes' placeholder='Escribe tu peso...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                        <label htmlFor="talla" className='text-lg font-semibold'>Talla en Cm: </label>
+                        <input type="text" id='pes' placeholder='Escribe tu talla (Cm)...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
                     </div>
-                    <div>
+                    <div className='mb-3'>
+                        <label htmlFor="peso" className='text-lg font-semibold'>Peso en Kg: </label>
+                        <input type="text" id='pes' placeholder='Escribe tu peso (Kg)...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                    </div>
+                    <div className='mb-3'>
                         <label htmlFor="estatura" className='text-lg font-semibold'>Estarura: </label>
                         <input type="text" id='estatur' placeholder='Escribe tu estatura...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
                     </div>
-                    <div>
+                    <div className='mb-3'>
                         <label htmlFor="age" className='text-lg font-semibold'>Edad: </label>
                         <input type="text" id='eda' placeholder='Escribe tu edad...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="factAct" className='text-lg font-semibold'>Factor Actividad: </label>
+                        <fieldset>
+                            <select name="FactorActividad" id="FactAct">
+                                <option value="sedentario">Sedentario</option>
+                                <option value="ligero">Ligero</option>
+                                <option value="moderado">Moderado</option>
+                                <option value="activo">Activo</option>
+                                <option value="vigoroso">Vigoroso</option>
+                            </select>
+                        </fieldset>
                     </div>
                 </div>
 
