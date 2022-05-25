@@ -7,6 +7,7 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
     const [peso, setPeso] = useState("");
     const [estatura, setEstatura] = useState("");
     const [edad, setEdad] = useState("");
+    const [actividad, setActividad] = useState("");
 
     const [error, setError] = useState(false)
 
