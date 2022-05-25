@@ -17,9 +17,9 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
         if (Object.keys(paciente).length > 0) {
             console.log(paciente);
             setNombre(paciente.nombre)
-            setCorreo(paciente.correo)
-            setSintomas(paciente.sintomas)
-            setFecha(paciente.fecha)
+            setTalla(paciente.talla)
+            setPeso(paciente.peso)
+            setEstatura(paciente.estatura)
         }
     }, [paciente]);
 
@@ -34,7 +34,7 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
     const validarFormulario = (e) => {
         e.preventDefault();
 
-        if ([nombre, correo, sintomas, fecha].includes('')) {
+        if ([nombre, talla, peso, estatura].includes('')) {
             setError(true);
             return
         }
@@ -43,9 +43,9 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
 
         const objetoPaciente = {
             nombre,
-            correo,
-            sintomas,
-            fecha,
+            talla,
+            peso,
+            estatura,
             //id: generarID()
         }
 
@@ -75,9 +75,9 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
 
     const limpiarDatos = () => {
         setNombre('');
-        setCorreo('');
-        setSintomas('');
-        setFecha('');
+        setTalla('');
+        setPeso('');
+        setEstatura('');
 
     }
 
@@ -111,19 +111,19 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="talla" className='text-lg font-semibold'>Talla en Cm: </label>
-                        <input type="text" id='pes' placeholder='Escribe tu talla (Cm)...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                        <input type="text" id='talla' placeholder='Escribe tu talla (Cm)...' className='w-full p-1 rounded-md mb-[5px]' value={talla} onChange={(e) => setTalla(e.target.value)} />
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="peso" className='text-lg font-semibold'>Peso en Kg: </label>
-                        <input type="text" id='pes' placeholder='Escribe tu peso (Kg)...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                        <input type="text" id='peso' placeholder='Escribe tu peso (Kg)...' className='w-full p-1 rounded-md mb-[5px]' value={peso} onChange={(e) => setPeso(e.target.value)} />
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="estatura" className='text-lg font-semibold'>Estarura: </label>
-                        <input type="text" id='estatur' placeholder='Escribe tu estatura...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                        <input type="text" id='estatura' placeholder='Escribe tu estatura...' className='w-full p-1 rounded-md mb-[5px]' value={estatura} onChange={(e) => setEstatura(e.target.value)} />
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="age" className='text-lg font-semibold'>Edad: </label>
-                        <input type="text" id='eda' placeholder='Escribe tu edad...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
+                        <input type="text" id='age' placeholder='Escribe tu edad...' className='w-full p-1 rounded-md mb-[5px]' value={nombre} onChange={(e) => setNombre(e.target.value)} />
                     </div>
                     <div>
                         <label htmlFor="factAct" className='text-lg font-semibold'>Factor Actividad: </label>

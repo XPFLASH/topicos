@@ -13,6 +13,9 @@ export const Paciente = ({ paciente, setPaciente, eliminarPaciente }) => {
     <div className='mt-5 shadow-xl border-2 border-solid border-black  bg-white p-5 rounded-lg uppercase  mb-3 text-gray-700 font-bold'>
 
       <p>Nombre Paciente: <span className='font-normal normal-case'>{paciente.nombre}</span></p>
+      <p>Talla: <span className='font-normal normal-case'>{paciente.talla}</span></p>
+      <p>Peso: <span className='font-normal normal-case'>{paciente.peso}</span></p>
+      <p>Estatura: <span className='font-normal normal-case'>{paciente.estatura}</span></p>
 
       <p>Correo: <span className='font-normal normal-case'>{paciente.correo}</span></p>
 
