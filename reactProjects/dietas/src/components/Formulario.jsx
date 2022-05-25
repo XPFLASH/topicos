@@ -3,9 +3,10 @@ import { useState, useEffect } from 'react';
 export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) => {
 
     const [nombre, setNombre] = useState("");
-    const [correo, setCorreo] = useState("");
-    const [sintomas, setSintomas] = useState("");
-    const [fecha, setFecha] = useState("");
+    const [talla, setTalla] = useState("");
+    const [peso, setPeso] = useState("");
+    const [estatura, setEstatura] = useState("");
+    const [edad, setEdad] = useState("");
 
     const [error, setError] = useState(false)
 
