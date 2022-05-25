@@ -95,8 +95,10 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="genero" className='text-lg font-semibold'>Genero: </label>
-                        <input type="radio" name="Masculino" id="h" />Masculino
-                        <input type="radio" name="Femenino" id="h" />Femenino
+                        <div>
+                            <input type="radio" name="genero" id="h" value={1} />Masculino
+                            <input type="radio" name="genero" id="m" value={2} />Femenino
+                        </div>
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="peso" className='text-lg font-semibold'>Peso: </label>
