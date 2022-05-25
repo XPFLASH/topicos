@@ -82,9 +82,11 @@ export const Formulario = ({ setPacientes, pacientes, paciente, setPaciente }) =
         <div className='md:w-1/2 lg:w-2/5'>
             <form className="bg-[#B6BDDE] p-6 m-6 border-4 border-solid border-black  rounded-md" onSubmit={validarFormulario}>
 
+
                 {error && <p className="font-bold text-center uppercase mb-2 p-1 bg-[#626FC0] rounded-xl w-full">* Debes llenar todos los campos</p>}
 
-                <h1 className='text-center font-bold uppercase text-xl mb-3 '>Formulario</h1>
+                <h1 className='text-center font-bold text-2xl  mb-3 '>Formulario</h1>
+                <p className='mt-5 text-xl'><span className='font-bold'>Ingresa</span> la información correspondiente</p>
 
                 <div className='mb-3'>
                     <div className='mb-3'>
